@@ -560,7 +560,10 @@ pre.code {
 }
 .project-thumb {
   position: relative; height: 170px; display: grid; place-items: center;
-  overflow: hidden;
+  overflow: hidden; padding: 18px; background: linear-gradient(135deg, var(--brand), var(--brand-2));
+}
+.project-thumb img {
+  object-fit: contain;
 }
 .project-thumb .material-icons { font-size: 54px; color: rgba(255, 255, 255, .92); z-index: 1; transition: transform .5s var(--ease); }
 .project-card:hover .project-thumb .material-icons { transform: scale(1.18) rotate(-6deg); }
